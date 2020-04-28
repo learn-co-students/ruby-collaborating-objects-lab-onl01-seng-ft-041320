@@ -56,7 +56,9 @@ describe 'Song' do
   end
 
   describe '#artist_name=' do
-    it "accepts an artist's name, finds or creates an Artist instance and assigns it to the Song's artist attribute" do
+    it "accepts an artist's name, 
+    finds or creates an Artist instance and assigns it to 
+    the Song's artist attribute" do
       Artist.class_variable_set("@@all",[])
 
       song = Song.new('Man in the Mirror')
