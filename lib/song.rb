@@ -34,8 +34,6 @@ class Song
       # binding.pry
       song_new.artist_name= artist_string
       song_new
-      # artist_string
-      
     end
     #Song.all 
     #We called .all on `Song`, so in this case, self inside of self.all would refer to the class
@@ -44,7 +42,7 @@ class Song
       # binding.pry
       if (self.artist.nil?)
         self.artist = Artist.find_or_create_by_name(name)
-          
+        self.artist.add_song(self) 
       end
       
     end
