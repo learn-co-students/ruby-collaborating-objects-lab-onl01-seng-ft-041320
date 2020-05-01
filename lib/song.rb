@@ -33,7 +33,7 @@ class Song
       song_new = Song.new(song_title)
       # binding.pry
       song_new.artist_name= artist_string
-      artist_string = song_new
+      song_new
       # artist_string
       
     end
